@@ -4,6 +4,10 @@
 .container {
     display: inline-block;
 }
+.parent-container {
+    display: flex;
+    column-gap: 20px;
+}
 
 .home-text-1 {
     color: rgb(255, 255, 255);
