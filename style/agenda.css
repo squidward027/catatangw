@@ -53,6 +53,8 @@
     height: 85vh;
     margin: auto;
     margin-top: 1em;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .container-class-select {
