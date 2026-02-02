@@ -7,6 +7,7 @@
 .parent-container {
     display: flex;
     column-gap: 20px;
+    top: 3vw;
 }
 
 .home-text-1 {
