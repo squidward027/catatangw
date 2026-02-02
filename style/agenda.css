@@ -102,3 +102,15 @@ a {
     background-color: rgb(51, 51, 51);
     width: clamp(40px, 2.8vw, 100px);
 }
+@media (max-width:900px) { 
+    .home-text-1 {
+    position: relative;
+    top: 3vh;
+    } 
+}
+@media (min-width:900px) { 
+    .home-text-1 {
+    position: relative;
+    top: 6vh;
+    } 
+}
