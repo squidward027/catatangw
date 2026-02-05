@@ -6,6 +6,7 @@
   --hover-color: #272832;
   --accent-color: rgb(0, 0, 0);
   --text-color: #c9c9c9;
+  --secondary-color:#3D3D3D;
 }
 *{
   margin: 0;
@@ -42,8 +43,9 @@ main p{
   margin-top: .35em;
 }
 nav{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   margin: 0em 5em;
+  border-radius: 0 0 10px 10px;
 }
 nav ul{
   list-style: none;
