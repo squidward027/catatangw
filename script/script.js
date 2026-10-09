@@ -1,64 +1,43 @@
-const openButton = document.getElementById('open-sidebar-button')
-const navbar = document.getElementById('navbar')
+const sidebarToggleBtns = document.querySelectorAll(".sidebar-toggle");
+const sidebar = document.querySelector(".sidebar");
+const searchForm = document.querySelector(".search-form");
+const themeToggleBtn = document.querySelector(".theme-toggle");
+const themeIcon = themeToggleBtn.querySelector(".theme-icon");
+const menuLinks = document.querySelectorAll(".menu-link");
 
-const media = window.matchMedia("(width < 700px)")
+// Updates the theme icon based on current theme and sidebar state
+const updateThemeIcon = () => {
+  const isDark = document.body.classList.contains("dark-theme");
+  themeIcon.textContent = sidebar.classList.contains("collapsed") ? (isDark ? "light_mode" : "dark_mode") : "dark_mode";
+};
 
-media.addEventListener('change', (e) => updateNavbar(e))
+// Apply dark theme if saved or system prefers, then update icon
+const savedTheme = localStorage.getItem("theme");
+const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const shouldUseDarkTheme = savedTheme === "dark" || (!savedTheme && systemPrefersDark);
 
-function updateNavbar(e){
-  const isMobile = e.matches
-  console.log(isMobile)
-  if(isMobile){
-    navbar.setAttribute('inert', '')
+document.body.classList.toggle("dark-theme", shouldUseDarkTheme);
+updateThemeIcon();
+
+// Toggle between themes on theme button click
+themeToggleBtn.addEventListener("click", () => {
+  const isDark = document.body.classList.toggle("dark-theme");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  updateThemeIcon();
+});
+
+// Toggle sidebar collapsed state on buttons click
+sidebarToggleBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+    updateThemeIcon();
+  });
+});
+
+// Expand the sidebar when the search form is clicked
+searchForm.addEventListener("click", () => {
+  if (sidebar.classList.contains("collapsed")) {
+    sidebar.classList.add("collapsed");
+    searchForm.querySelector("input").focus();
   }
-  else{
-    // desktop device
-    navbar.removeAttribute('inert')
-  }
-}
-
-function openSidebar(){
-  navbar.classList.add('show')
-  openButton.setAttribute('aria-expanded', 'true')
-  navbar.removeAttribute('inert')
-}
-
-function closeSidebar(){
-  navbar.classList.remove('show')
-  openButton.setAttribute('aria-expanded', 'false')
-  navbar.setAttribute('inert', '')
-}
-
-var cursor = document.getElementById('cursor-dot');
-document.addEventListener('mousemove', moveCursor)
-function moveCursor(e) {
-  let x = e.clientX;
-  let y = e.clientY;
-  cursor.style.left = `${x}px`;
-  cursor.style.top = `${y}px`;
-}
-var cursor2 = document.getElementById('cursor-outline');
-document.addEventListener('mousemove', moveCursor2)
-function moveCursor2(e) {
-  let x = e.clientX;
-  let y = e.clientY;
-  cursor2.animate({
-    left: `${x}px`,
-    top: `${y}px`
-  }, {duration: 400, fill: "forwards"})
-}
-
-//
-//
-
-// For Bookmark Links
-// const navLinks = document.querySelectorAll('nav a')
-// navLinks.forEach(link => {
-//   link.addEventListener('click', () => {
-//     closeSidebar()
-//   })
-// })
-
-updateNavbar(media)
-
-
+});

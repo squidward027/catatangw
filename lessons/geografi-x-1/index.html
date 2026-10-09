@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catatangw</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="site-nav">
+      <button class="sidebar-toggle">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </nav>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar collapsed">
+        <!-- Sidebar header -->
+        <div class="sidebar-header">
+          <p class="header-logo">Catatangw</p>
+          <button class="sidebar-toggle">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+        </div>
+
+        <div class="sidebar-content">
+          <!-- Sidebar Menu -->
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="../../index.html" class="menu-link">
+                <span class="material-symbols-rounded">home</span>
+                <span class="menu-label">Home</span>
+              </a>
+            </li>
+            <!--
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <span class="material-symbols-rounded">dashboard</span>
+                <span class="menu-label">Dashboard</span>
+              </a>
+            </li>
+          -->
+            <li class="menu-item">
+              <a href="../../lessons.html" class="menu-link active">
+                <span class="material-symbols-rounded">book_ribbon</span>
+                <span class="menu-label">Pembelajaran</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../../berita/index.html" class="menu-link">
+                <span class="material-symbols-rounded">star</span>
+                <span class="menu-label">Berita</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="../../../merch/index.html" class="menu-link">
+                <span class="material-symbols-rounded">storefront</span>
+                <span class="menu-label">Merch</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="https://drive.google.com/file/d/132nyQZjFPI2hMSYZrskOvvR2DaHD8HXb/view?usp=sharing" class="menu-link">
+                <span class="material-symbols-rounded">volunteer_activism</span>
+                <span class="menu-label">Donasi</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+          <button class="theme-toggle">
+            <div class="theme-label">
+              <span class="theme-icon material-symbols-rounded">dark_mode</span>
+              <span class="theme-text">Dark Mode</span>
+            </div>
+            <div class="theme-toggle-track">
+              <div class="theme-toggle-indicator"></div>
+            </div>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Site main content -->
+      <div class="main-content">
+        <h1 class="page-title">Lessons</h1>
+        <p class="card">Halo, gw bikin ini ada dark-light mode biar bisa diatur sesuka hati, anggep aja raja. Disini kamu bisa menikmati berbagai catatan pelajaran yang tersedia.</p>
+
+         <!-- Search Form -->
+          <form action="#" class="search-form">
+            <span class="material-symbols-rounded">search</span>
+            <input type="search" placeholder="Search..." id="search-input" required />
+          </form>
+          <h1 class="lessons-card-label"><a href="../../lessons.html">Lessons</a> > Geografi</h1>
+          <div class="lessons-card">
+            <div class="card2" onclick="window.location.href='unit-1/1.html';">
+              <h1 class="header-card">Unit 1: Memandang dari kacamata Geografi</h1>
+              <div class="body">Karakteristik, Aspek, Ruang dan Tempat, Pendekatan, Konsep, dan Prinsip</div>
+            </div>
+           <div class="card2" onclick="window.location.href='unit-2/1.html';">
+              <h1 class="header-card">Unit 2: Membaca Bumi dengan Peta</h1>
+              <div class="body">Definisi, kegunaan, dan jenis-jenis peta</div>
+            </div>
+      </div>
+    </div>
+  </body>
+    <script src="script/script.js"></script>
+    <script defer src="script/search.js"></script>
+</html>
