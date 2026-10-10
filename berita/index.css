@@ -391,7 +391,7 @@ h1.header-card {
 
 .body-card {
   font-weight:lighter;
-  color: #b7b7b7;
+  color: var(--color-text-primary);
 }
 
 .hide {
@@ -470,7 +470,6 @@ h1.header-card-2 {
 .body-card-2 {
   display: none;
   font-weight:lighter;
-  color: #b7b7b7;
 }
 
 .card2-2:after {
