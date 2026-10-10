@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+IN+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+    
+
+@keyframes appear-1 {
+    from {
+        opacity: 0.30;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    } to {
+        translate: -100%;
+    }
+}
+
+@media (max-height: 932px) {
+    .container {
+    display: inline-block;
+    top: 3vw;
+    }   
+}
+@media (min-height: 932px) {
+    .container {
+    display: inline-block;
+    top: 2vw;
+    }   
+}
+.parent-container {
+    display: flex;
+    column-gap: 20px;
+    top: 3vw;
+}
+
+.home-text-1 {
+    color: rgb(255, 255, 255);
+    font-family: Mabry Pro;
+    font-size: clamp(25px, 4vw, 90px);
+    font-weight: 550;
+    display: inline-block;
+    position: relative;
+    top: clamp(16px, 1em, 20px);
+    left: 2%;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+
+.home-subtext-1 {
+    position: relative;
+    font-size: clamp(2px, 3vw, 20px);
+    top: 1em;
+    padding-left: 2%;
+    max-width: 70%;
+}
+
+.catatan-woi {
+    height: 4em;
+    width: 10em;
+    position: relative;
+    top: 20em;
+    margin-left: 2%;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Noto serif';
+    transition: 0.2s;
+    font-size: clamp(1px, 2vw, 15px);
+}
+
+.catatan-woi:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.2s;
+    cursor: none;
+}
+
+.jadwal {
+    height: 4em;
+    width: 10em;
+    position: relative;
+    top: 20em;
+    margin-left: 1%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: 'Noto serif';
+    transition: 0.2s;
+    font-size: clamp(1px, 2vw, 15px);
+}
+
+.jadwal:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: white;
+    transition: 0.2s;
+    cursor: none;
+}
+
+ .sendyourmessage {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    position: relative;
+    top: -7em;
+  }
+
+/* Horizontal Laptop FHD/2K */
+
+  @media (min-width: 1025px) {
+.home-subtext-1 {
+    position: relative;
+    display: inline-block;
+    top: -1em;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-2 {
+    position: relative;
+    top: 0em;
+    right: 0;
+    max-width: 45%;
+    float: right;
+    font-size: 20px;
+}
+
+.home-subtext-3 {
+    position: relative;
+    top: 0.2em;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.64;
+    float: right;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-4 {
+    position: relative;
+    display: inline-block;
+    top: 2em;
+    left: 1em;
+    font-size: 20px;
+    max-width: 50%;
+}
+
+.home-subtext-5 {
+    position: relative;
+    top: 1em;
+    left: 0.7em;
+    font-size: 7vw;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-6 {
+    position: relative;
+    top: 0em;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.64;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-7 {
+     position: relative;
+    display: inline-block;
+    top: 1em;
+    left: 1em;
+    font-size: 20px;
+}
+
+.support-1-button {
+    background-image: url(../image/whatsapp.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.support-2-button {
+    background-image: url(../image/instagram.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    border-radius: 7px;
+}
+.support-1-button:hover {
+    background-color: #2522c0;
+}
+
+.support-2-button:hover {
+    background-color: #2522c0;
+}
+
+.gallery-container {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}   
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-loop {
+    display: flex; 
+    margin: 100px auto;
+    animation: spin 12s infinite linear;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+.container {
+    flex: 0 0 5em;
+    height: 30vw;
+    padding: 1em;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+  }
+
+/* Vertical Tablet */
+
+  @media (min-width: 650px) and (max-width: 1025px) {
+    .home-subtext-1 {
+    position: relative;
+    display: inline-block;
+    top: -1em;
+    font-size: 7vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-2 {
+    position: relative;
+    top: -4em;
+    max-width: 50%;
+    float: right;
+    font-size: 18px;
+}
+
+.home-subtext-3 {
+    position: relative;
+    display: inline;
+    top: 0.5em;
+    padding-left: 2%;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    max-width: 80%;
+    opacity: 0.64;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-4 {
+    position: relative;
+    display: inline-block;
+    top: 2em;
+    left: 1em;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+.home-subtext-5 {
+    position: relative;
+    top: 2em;
+    padding-left: 2%;
+    font-size: 7vw;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-6 {
+    position: relative;
+    top: -1em;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.64;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-7 {
+     position: relative;
+    display: inline-block;
+    top: -2em;
+    left: 1em;
+    font-size: 20px;
+}
+
+.support-1-button {
+    position: relative;
+    background-image: url(../image/whatsapp.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5em;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.support-2-button {
+    position: relative;
+    background-image: url(../image/instagram.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5em;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    border-radius: 7px;
+}
+.support-1-button:hover {
+    background-color: #2522c0;
+}
+
+.support-2-button:hover {
+    background-color: #2522c0;
+}
+
+.gallery-container {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}   
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-loop {
+    display: flex; 
+    margin: 100px auto;
+    animation: spin 12s infinite linear;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+.container {
+    flex: 0 0 5em;
+    height: 50vw;
+    padding: 1em;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+  }
+
+.dotted {
+    width: 5px;
+    height: 5px;
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.267);
+     left: 68px;
+     top: 50em;
+}
+
+.line-container {
+  position: absolute;
+  left: 70px;
+  top: 50em;
+  z-index: 30;
+  width: 1px;
+  height: 200vh; 
+}
+
+/* Vertical Tablet */
+@media (min-width: 0px) and (max-width: 649px) {
+    .home-subtext-1 {
+    position: relative;
+    display: inline-block;
+    top: -1em;
+    font-size: 9vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-2 {
+    position: relative;
+    top: -2em;
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.home-subtext-3 {
+    position: relative;
+    display: inline;
+    top: 1em;
+    padding-left: 2%;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    max-width: 80%;
+    opacity: 0.64;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-4 {
+    position: relative;
+    display: inline-block;
+    top: 2em;
+    font-size: 15px;
+    max-width: 100%;
+}
+
+.home-subtext-5 {
+    position: relative;
+    top: 3em;
+    padding-left: 2%;
+    font-size: 7vw;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-6 {
+    position: relative;
+    top: -1em;
+    font-size: 8vw;
+    line-height: 0.9em;
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #99daff;
+    padding-left: 2%;
+    max-width: 80%;
+    opacity: 0.64;
+    opacity: 0.40;
+    animation: appear-1 linear;
+    animation-timeline: view();
+    animation-range: exit 7;
+}
+
+.home-subtext-7 {
+     position: relative;
+    display: inline-block;
+    top: -1.2em;
+    font-size: 20px;
+}
+
+.support-1-button {
+    position: relative;
+    background-image: url(../image/whatsapp.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5em;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    margin-left: 0px;
+    border-radius: 7px;
+}
+
+.support-2-button {
+    position: relative;
+    background-image: url(../image/instagram.png);
+    background-color: #3432c7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5em;
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    cursor: none;
+    border-radius: 7px;
+}
+.support-1-button:hover {
+    background-color: #2522c0;
+}
+
+.support-2-button:hover {
+    background-color: #2522c0;
+}
+
+.gallery-container {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}   
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-loop {
+    display: flex; 
+    margin: 100px auto;
+    animation: spin 12s infinite linear;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+.container {
+    flex: 0 0 5em;
+    height: 50vw;
+    padding: 1em;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+  }
+
+.dotted {
+    width: 5px;
+    height: 5px;
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 0.267);
+     left: 68px;
+     top: 50em;
+}
+
+.line-container {
+  position: absolute;
+  left: 70px;
+  top: 50em;
+  z-index: 30;
+  width: 1px;
+  height: 200vh; 
+}
+
+@media (min-width: 1023px) {
+    
+.verticalline4 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.267);
+  transform: scaleY(0);
+  transform-origin: top;
+}
+}
+
+.line-container.active .verticalline4 {
+  animation: growDown 8s ease-out forwards;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+footer {
+    background-color: #3432c7;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.iframe-1 {
+    width: 100%;
+    height: 100vh;
+}
